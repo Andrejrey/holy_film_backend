@@ -10,7 +10,7 @@
   "main": "index.js",
   "devDependencies": {},
   "scripts": {
-    "dev": "nodemon app.js",
+    "dev": "nodemon -r dotenv/config index.js dotenv_config_path=./.env.local",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
